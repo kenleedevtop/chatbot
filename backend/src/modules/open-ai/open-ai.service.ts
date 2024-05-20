@@ -14,7 +14,7 @@ export class OpenAiService {
     this.openai = new OpenAIApi({
       apiKey: process.env.OPENAI_API_KEY,
     });
-    this.maxToken = 150;
+    this.maxToken = 500;
   }
 
   async chatGptRequest(requestTip: RequestTipDto) {
